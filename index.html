@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreZor - We Simplify Technology for You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d;
+            color: #d1d5db; /* Light gray for body text */
+        }
+.hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1636953056323-9c09fdd74fa6');
+            background-size: cover;
+            background-position: center;
+        .carousel-container {
+            overflow: hidden;
+            width: 100%;
+        }
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-70 backdrop-filter backdrop-blur-lg">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-white text-2xl font-bold rounded-lg px-2 py-1 transition-colors duration-300 hover:text-gray-400">coreZor</a>
+            <ul class="hidden md:flex space-x-6 text-gray-300">
+                <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a></li>
+                <li><a href="#clients" class="hover:text-white transition-colors duration-300">Our Clients</a></li>
+                <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                <li><a href="#contact" class="hover:text-white transition-colors duration-300">Let’s Connect</a></li>
+            </ul>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-90 py-4">
+            <ul class="flex flex-col items-center space-y-4 text-gray-300">
+                <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a></li>
+                <li><a href="#clients" class="hover:text-white transition-colors duration-300">Our Clients</a></li>
+                <li><a href="#testimonials" class="hover:text-white transition-colors duration-300">Testimonials</a></li>
+                <li><a href="#about" class="hover:text-white transition-colors duration-300">About Us</a></li>
+                <li><a href="#contact" class="hover:text-white transition-colors duration-300">Let’s Connect</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero h-screen flex items-center justify-center text-center text-white p-4">
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">We Simplify Technology for You</h1>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto">Our role is simple—we connect business goals with the right IT strategy.</p>
+                <a href="#contact" class="inline-block bg-white text-black font-semibold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">Let's Connect</a>
+            </div>
+        </section>
+
+        <!-- Value Proposition Section -->
+        <section id="about" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 text-white">Our Value Proposition</h2>
+                
+                <div class="space-y-24">
+                    <!-- Value Prop 1 -->
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/800x600/1e293b/FFFFFF?text=Align+IT" alt="Align IT with Business Goals" class="w-full h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="md:w-1/2 text-left space-y-4">
+                            <h3 class="text-2xl font-bold text-white">Align IT with Business Goals</h3>
+                            <p class="text-gray-400">We bridge the gap between your business objectives and your IT capabilities by developing a strategic roadmap that includes digital transformation, cloud adoption, and comprehensive business analysis.</p>
+                        </div>
+                    </div>
+
+                    <!-- Value Prop 2 -->
+                    <div class="flex flex-col md:flex-row-reverse items-center justify-center gap-12">
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/800x600/1e293b/FFFFFF?text=Cost+Optimization" alt="Cost Optimization" class="w-full h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="md:w-1/2 text-left space-y-4">
+                            <h3 class="text-2xl font-bold text-white">Cost Optimization</h3>
+                            <p class="text-gray-400">Our solutions are designed to reduce your infrastructure, licensing, and operational costs, ensuring you get the most value out of your technology investments while maintaining efficiency.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Value Prop 3 -->
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/800x600/1e293b/FFFFFF?text=Scalability" alt="Scalability & Flexibility" class="w-full h-auto rounded-xl shadow-lg transition-transform duration-300 hover:scale-105">
+                        </div>
+                        <div class="md:w-1/2 text-left space-y-4">
+                            <h3 class="text-2xl font-bold text-white">Scalability & Flexibility</h3>
+                            <p class="text-gray-400">We provide scalable and adaptive solutions that grow with your business. Our flexible approach ensures your technology can quickly evolve to meet new market demands and challenges.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 text-white">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=System+Architecture" alt="Architecture & System Designing" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-white">Architecture & System Designing</h3>
+                            <p class="text-gray-400">Create robust and scalable system architectures tailored to your business needs.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=Digital+Transformation" alt="IT Roadmap & Digital Transformation" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-white">IT Roadmap & Digital Transformation</h3>
+                            <p class="text-gray-400">Strategic planning to align your technology with your business goals for digital growth.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=Talent+Acquisition" alt="Talent Acquisition" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-white">Talent Acquisition</h3>
+                            <p class="text-gray-400">Find and recruit the best talent to build a high-performing IT team.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=Sales+Strategy" alt="Sales Trail" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-white">Sales Trail</h3>
+                            <p class="text-gray-400">Develop effective sales strategies and a trail to track progress and success.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=Project+Management" alt="Project Management" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-white">Project Management</h3>
+                            <p class="text-gray-400">Expert management to ensure your projects are delivered on time and on budget.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=Customer+Support" alt="Support & Maintenance" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-white">Support & Maintenance</h3>
+                            <p class="text-gray-400">Ongoing support and maintenance to keep your systems running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-white">Our Customers</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Start-ups</h3>
+                        <p class="text-gray-400">Tailored solutions to help new businesses establish a strong technological foundation.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Small & Medium Firms</h3>
+                        <p class="text-gray-400">Scalable IT strategies that enable growth without significant overheads.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Large Enterprise</h3>
+                        <p class="text-gray-400">Complex IT infrastructure and system design to meet large-scale demands.</p>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Global Firms</h3>
+                        <p class="text-gray-400">Solutions for international operations and global teams.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gray-900">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 text-white">What Our Clients Say</h2>
+                
+                <div class="relative max-w-4xl mx-auto carousel-container">
+                    <div id="carousel" class="carousel-slides">
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"CoreZor's team was instrumental in our digital transformation. Their strategic roadmap was clear, and their execution was flawless. We're now more efficient and competitive."</p>
+                            <div class="font-semibold text-white">- Jane Doe, CTO, TechCorp</div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"The talent acquisition service from CoreZor is unmatched. They found the perfect candidates for our team, saving us countless hours and resources."</p>
+                            <div class="font-semibold text-white">- John Smith, CEO, Innovate Solutions</div>
+                        </div>
+                        <!-- Testimonial 3 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"We were struggling with our infrastructure costs, but CoreZor helped us optimize our cloud setup, leading to significant savings without compromising performance."</p>
+                            <div class="font-semibold text-white">- Sarah Chen, Operations Manager, CloudWorks</div>
+                        </div>
+                        <!-- Testimonial 4 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"Their project management expertise ensured our complex project stayed on track and was delivered ahead of schedule. Highly recommended!"</p>
+                            <div class="font-semibold text-white">- Michael B., Director of R&D, Future Labs</div>
+                        </div>
+                        <!-- Testimonial 5 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"CoreZor's ongoing support and maintenance have been a game-changer. They are always responsive and proactive, keeping our systems running smoothly 24/7."</p>
+                            <div class="font-semibold text-white">- Alex Rodriguez, Founder, Global Connect</div>
+                        </div>
+                        <!-- Testimonial 6 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"The training and upskilling provided by CoreZor were exactly what our team needed to stay ahead in a rapidly changing tech landscape."</p>
+                            <div class="font-semibold text-white">- Emily Davis, HR Lead, Data Dynamics</div>
+                        </div>
+                        <!-- Testimonial 7 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"From the initial consultation to final implementation, CoreZor was a true partner. Their commitment to our success was evident every step of the way."</p>
+                            <div class="font-semibold text-white">- Ben Carter, CEO, Synapse Corp</div>
+                        </div>
+                        <!-- Testimonial 8 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"We were impressed by their deep understanding of system architecture. They designed a solution that not only solved our current problems but is also future-proof."</p>
+                            <div class="font-semibold text-white">- Jessica White, Lead Architect, Quantum Systems</div>
+                        </div>
+                        <!-- Testimonial 9 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"The sales trail advice from CoreZor was invaluable. We've seen a measurable improvement in our sales process and conversion rates."</p>
+                            <div class="font-semibold text-white">- Chris Miller, Sales Director, Growth Hub</div>
+                        </div>
+                        <!-- Testimonial 10 -->
+                        <div class="carousel-slide bg-gray-800 rounded-xl p-8 shadow-lg">
+                            <p class="text-xl italic mb-4">"As a startup, we needed a technology partner we could trust. CoreZor's consultancy model gave us access to top-tier expertise exactly when we needed it."</p>
+                            <div class="font-semibold text-white">- Maria Lee, Founder, NextGen Apps</div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <button id="prevBtn" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full hover:bg-gray-600 transition-colors z-10">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="nextBtn" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-700 text-white p-3 rounded-full hover:bg-gray-600 transition-colors z-10">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gray-900">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-white">Let’s Connect</h2>
+                <div class="max-w-xl mx-auto space-y-4">
+                    <p class="text-gray-400">Ready to transform your technology? Fill out the form below and we'll be in touch.</p>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Full Name" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-all">
+                        <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-all">
+                        <input type="tel" placeholder="Contact Number" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-all">
+                        <textarea id="message-textarea" placeholder="Message" rows="4" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-600 transition-all"></textarea>
+                        <button type="submit" class="w-full bg-white text-black font-semibold py-3 rounded-full transition-transform transform hover:scale-105 shadow-lg">Send Message</button>
+                    </form>
+                </div>
+                <div class="mt-8 text-gray-400 text-sm">
+                    <p>645 Ground Floor Shaheed Bhagat Singh Apartment Dwarka Sector 14</p>
+                    <p>Email: tech@corezor.com | Phone: +91-8010013399</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 text-center text-gray-400">
+        <div class="container mx-auto px-4 text-sm flex flex-col md:flex-row justify-between items-center">
+            <span class="mb-4 md:mb-0">&copy; 2025 coreZor. All Rights Reserved.</span>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-white transition-colors">Careers</a>
+                <a href="#" class="hover:text-white transition-colors">Updates</a>
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Suppliers</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const carousel = document.getElementById('carousel');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentIndex = 0;
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : slides.length - 1;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+            updateCarousel();
+        });
+    </script>
+
+</body>
+</html>
